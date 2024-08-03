@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+     position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.back{
+    transform:translateZ(-40px) scale(5);
+}
+.ground{
+    transform: translateZ(-20px) scale(20px);
+}
+.back,.ground{
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+object-fit: cover;
+}
+h1{
+    position: absolute;
+    font-size: 10rem;
+    left: 25%;
+    top: 1rem;
+    transform: translateX(-24);
+     /* color: rgb(169, 115, 220);  */
+     color: black;
+    
+    text-shadow: 0 0 4 rgb(136, 136, 196);
+   
+}
+section{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem;
+}
+.bg1{
+    background-image: url(https://wpassets.trainingpeaks.com/wp-content/uploads/2021/06/16152950/21126-Blog-1200x675-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background-image: url(https://www.independence.aero/media/1750x960/k-30024-geronimo3-20211109_163550a_fly-market.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg3{
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/22/04/32/blue-4145659_1280.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bg4{
+    background-image: url(https://www.princesstourism.com/wp-content/uploads/2023/05/GettyImages-597572085-584819855f9b5851e593fd0b-5c336fd646e0fb0001d39014.jpg);
+}
+.secheading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 30rem;
+
+}
+.decryption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-shadow: 2px 2px 2px black;
+}
+
